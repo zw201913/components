@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3258C701CF72F4C003DD8C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3258C6F1CF72F4C003DD8C6 /* AppDelegate.swift */; };
+		D3258C721CF72F4C003DD8C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3258C711CF72F4C003DD8C6 /* ViewController.swift */; };
+		D3258C751CF72F4C003DD8C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3258C731CF72F4C003DD8C6 /* Main.storyboard */; };
+		D3258C781CF72F4C003DD8C6 /* starprogress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3258C761CF72F4C003DD8C6 /* starprogress.xcdatamodeld */; };
+		D3258C7A1CF72F4C003DD8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3258C791CF72F4C003DD8C6 /* Assets.xcassets */; };
+		D3258C7D1CF72F4C003DD8C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3258C7B1CF72F4C003DD8C6 /* LaunchScreen.storyboard */; };
+		D3258C881CF72F4C003DD8C6 /* starprogressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3258C871CF72F4C003DD8C6 /* starprogressTests.swift */; };
+		D3258C931CF72F4C003DD8C6 /* starprogressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3258C921CF72F4C003DD8C6 /* starprogressUITests.swift */; };
+		D3258CA31CF73125003DD8C6 /* StarProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3258CA21CF73125003DD8C6 /* StarProgressBar.swift */; };
+		D3258CA51CF739B1003DD8C6 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3258CA41CF739B1003DD8C6 /* StarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3258C841CF72F4C003DD8C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3258C641CF72F4C003DD8C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3258C6B1CF72F4C003DD8C6;
+			remoteInfo = starprogress;
+		};
+		D3258C8F1CF72F4C003DD8C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3258C641CF72F4C003DD8C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3258C6B1CF72F4C003DD8C6;
+			remoteInfo = starprogress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3258C6C1CF72F4C003DD8C6 /* starprogress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starprogress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3258C6F1CF72F4C003DD8C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3258C711CF72F4C003DD8C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3258C741CF72F4C003DD8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3258C771CF72F4C003DD8C6 /* starprogress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = starprogress.xcdatamodel; sourceTree = "<group>"; };
+		D3258C791CF72F4C003DD8C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3258C7C1CF72F4C003DD8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3258C7E1CF72F4C003DD8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3258C831CF72F4C003DD8C6 /* starprogressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starprogressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3258C871CF72F4C003DD8C6 /* starprogressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starprogressTests.swift; sourceTree = "<group>"; };
+		D3258C891CF72F4C003DD8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3258C8E1CF72F4C003DD8C6 /* starprogressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starprogressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3258C921CF72F4C003DD8C6 /* starprogressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starprogressUITests.swift; sourceTree = "<group>"; };
+		D3258C941CF72F4C003DD8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3258CA21CF73125003DD8C6 /* StarProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarProgressBar.swift; sourceTree = "<group>"; };
+		D3258CA41CF739B1003DD8C6 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3258C691CF72F4C003DD8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3258C801CF72F4C003DD8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3258C8B1CF72F4C003DD8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3258C631CF72F4C003DD8C6 = {
+			isa = PBXGroup;
+			children = (
+				D3258C6E1CF72F4C003DD8C6 /* starprogress */,
+				D3258C861CF72F4C003DD8C6 /* starprogressTests */,
+				D3258C911CF72F4C003DD8C6 /* starprogressUITests */,
+				D3258C6D1CF72F4C003DD8C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3258C6D1CF72F4C003DD8C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3258C6C1CF72F4C003DD8C6 /* starprogress.app */,
+				D3258C831CF72F4C003DD8C6 /* starprogressTests.xctest */,
+				D3258C8E1CF72F4C003DD8C6 /* starprogressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3258C6E1CF72F4C003DD8C6 /* starprogress */ = {
+			isa = PBXGroup;
+			children = (
+				D3258C6F1CF72F4C003DD8C6 /* AppDelegate.swift */,
+				D3258C711CF72F4C003DD8C6 /* ViewController.swift */,
+				D3258C731CF72F4C003DD8C6 /* Main.storyboard */,
+				D3258C791CF72F4C003DD8C6 /* Assets.xcassets */,
+				D3258C7B1CF72F4C003DD8C6 /* LaunchScreen.storyboard */,
+				D3258C7E1CF72F4C003DD8C6 /* Info.plist */,
+				D3258C761CF72F4C003DD8C6 /* starprogress.xcdatamodeld */,
+				D3258CA21CF73125003DD8C6 /* StarProgressBar.swift */,
+				D3258CA41CF739B1003DD8C6 /* StarView.swift */,
+			);
+			path = starprogress;
+			sourceTree = "<group>";
+		};
+		D3258C861CF72F4C003DD8C6 /* starprogressTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3258C871CF72F4C003DD8C6 /* starprogressTests.swift */,
+				D3258C891CF72F4C003DD8C6 /* Info.plist */,
+			);
+			path = starprogressTests;
+			sourceTree = "<group>";
+		};
+		D3258C911CF72F4C003DD8C6 /* starprogressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3258C921CF72F4C003DD8C6 /* starprogressUITests.swift */,
+				D3258C941CF72F4C003DD8C6 /* Info.plist */,
+			);
+			path = starprogressUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3258C6B1CF72F4C003DD8C6 /* starprogress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3258C971CF72F4C003DD8C6 /* Build configuration list for PBXNativeTarget "starprogress" */;
+			buildPhases = (
+				D3258C681CF72F4C003DD8C6 /* Sources */,
+				D3258C691CF72F4C003DD8C6 /* Frameworks */,
+				D3258C6A1CF72F4C003DD8C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = starprogress;
+			productName = starprogress;
+			productReference = D3258C6C1CF72F4C003DD8C6 /* starprogress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3258C821CF72F4C003DD8C6 /* starprogressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3258C9A1CF72F4C003DD8C6 /* Build configuration list for PBXNativeTarget "starprogressTests" */;
+			buildPhases = (
+				D3258C7F1CF72F4C003DD8C6 /* Sources */,
+				D3258C801CF72F4C003DD8C6 /* Frameworks */,
+				D3258C811CF72F4C003DD8C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3258C851CF72F4C003DD8C6 /* PBXTargetDependency */,
+			);
+			name = starprogressTests;
+			productName = starprogressTests;
+			productReference = D3258C831CF72F4C003DD8C6 /* starprogressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3258C8D1CF72F4C003DD8C6 /* starprogressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3258C9D1CF72F4C003DD8C6 /* Build configuration list for PBXNativeTarget "starprogressUITests" */;
+			buildPhases = (
+				D3258C8A1CF72F4C003DD8C6 /* Sources */,
+				D3258C8B1CF72F4C003DD8C6 /* Frameworks */,
+				D3258C8C1CF72F4C003DD8C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3258C901CF72F4C003DD8C6 /* PBXTargetDependency */,
+			);
+			name = starprogressUITests;
+			productName = starprogressUITests;
+			productReference = D3258C8E1CF72F4C003DD8C6 /* starprogressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3258C641CF72F4C003DD8C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zouwei;
+				TargetAttributes = {
+					D3258C6B1CF72F4C003DD8C6 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D3258C821CF72F4C003DD8C6 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D3258C6B1CF72F4C003DD8C6;
+					};
+					D3258C8D1CF72F4C003DD8C6 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D3258C6B1CF72F4C003DD8C6;
+					};
+				};
+			};
+			buildConfigurationList = D3258C671CF72F4C003DD8C6 /* Build configuration list for PBXProject "starprogress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3258C631CF72F4C003DD8C6;
+			productRefGroup = D3258C6D1CF72F4C003DD8C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3258C6B1CF72F4C003DD8C6 /* starprogress */,
+				D3258C821CF72F4C003DD8C6 /* starprogressTests */,
+				D3258C8D1CF72F4C003DD8C6 /* starprogressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3258C6A1CF72F4C003DD8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3258C7D1CF72F4C003DD8C6 /* LaunchScreen.storyboard in Resources */,
+				D3258C7A1CF72F4C003DD8C6 /* Assets.xcassets in Resources */,
+				D3258C751CF72F4C003DD8C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3258C811CF72F4C003DD8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3258C8C1CF72F4C003DD8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3258C681CF72F4C003DD8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3258CA31CF73125003DD8C6 /* StarProgressBar.swift in Sources */,
+				D3258C781CF72F4C003DD8C6 /* starprogress.xcdatamodeld in Sources */,
+				D3258C721CF72F4C003DD8C6 /* ViewController.swift in Sources */,
+				D3258CA51CF739B1003DD8C6 /* StarView.swift in Sources */,
+				D3258C701CF72F4C003DD8C6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3258C7F1CF72F4C003DD8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3258C881CF72F4C003DD8C6 /* starprogressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3258C8A1CF72F4C003DD8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3258C931CF72F4C003DD8C6 /* starprogressUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3258C851CF72F4C003DD8C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3258C6B1CF72F4C003DD8C6 /* starprogress */;
+			targetProxy = D3258C841CF72F4C003DD8C6 /* PBXContainerItemProxy */;
+		};
+		D3258C901CF72F4C003DD8C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3258C6B1CF72F4C003DD8C6 /* starprogress */;
+			targetProxy = D3258C8F1CF72F4C003DD8C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3258C731CF72F4C003DD8C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3258C741CF72F4C003DD8C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3258C7B1CF72F4C003DD8C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3258C7C1CF72F4C003DD8C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3258C951CF72F4C003DD8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3258C961CF72F4C003DD8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3258C981CF72F4C003DD8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = starprogress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulletservice.starprogress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3258C991CF72F4C003DD8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = starprogress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulletservice.starprogress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D3258C9B1CF72F4C003DD8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = starprogressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulletservice.starprogressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starprogress.app/starprogress";
+			};
+			name = Debug;
+		};
+		D3258C9C1CF72F4C003DD8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = starprogressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulletservice.starprogressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starprogress.app/starprogress";
+			};
+			name = Release;
+		};
+		D3258C9E1CF72F4C003DD8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = starprogressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulletservice.starprogressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = starprogress;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D3258C9F1CF72F4C003DD8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = starprogressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulletservice.starprogressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = starprogress;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3258C671CF72F4C003DD8C6 /* Build configuration list for PBXProject "starprogress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3258C951CF72F4C003DD8C6 /* Debug */,
+				D3258C961CF72F4C003DD8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3258C971CF72F4C003DD8C6 /* Build configuration list for PBXNativeTarget "starprogress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3258C981CF72F4C003DD8C6 /* Debug */,
+				D3258C991CF72F4C003DD8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3258C9A1CF72F4C003DD8C6 /* Build configuration list for PBXNativeTarget "starprogressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3258C9B1CF72F4C003DD8C6 /* Debug */,
+				D3258C9C1CF72F4C003DD8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3258C9D1CF72F4C003DD8C6 /* Build configuration list for PBXNativeTarget "starprogressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3258C9E1CF72F4C003DD8C6 /* Debug */,
+				D3258C9F1CF72F4C003DD8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3258C761CF72F4C003DD8C6 /* starprogress.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3258C771CF72F4C003DD8C6 /* starprogress.xcdatamodel */,
+			);
+			currentVersion = D3258C771CF72F4C003DD8C6 /* starprogress.xcdatamodel */;
+			path = starprogress.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3258C641CF72F4C003DD8C6 /* Project object */;
+}
