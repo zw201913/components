@@ -37,8 +37,8 @@ class StarProgressBar: UIView {
     //进度条的百分比
     var progress : CGFloat = 0.0 {
         didSet{
-            if(progress<0.0){
-                progress=0.0
+            if(progress<minProgress){
+                progress=minProgress
             }else if(progress>1.0){
                 progress=1.0
             }
@@ -47,7 +47,11 @@ class StarProgressBar: UIView {
     }
     var minProgress : CGFloat = 0.0 {
         didSet{
-            
+            if(minProgress<0.0){
+                minProgress=0.0
+            }else if(minProgress>1.0){
+                minProgress=1.0
+            }
             self.setNeedsLayout()
         }
     }
