@@ -67,13 +67,13 @@ class StarProgressBar: UIView {
     convenience init(){
         self.init(frame:CGRectZero)
     }
-    
+    //初始化
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addStarView()
         
     }
-    
+    //添加starView
     func addStarView(){
         for _ in 0..<self.starNum{
             let starView=StarView()
@@ -83,7 +83,7 @@ class StarProgressBar: UIView {
             self.starViews.append(starView)
         }
     }
-    
+    //计算各控件位置
     func countFrame(){
         let starW:CGFloat=(self.starViews[0].image?.size.width)!;
         let starH:CGFloat=(self.starViews[0].image?.size.height)!;
@@ -98,7 +98,7 @@ class StarProgressBar: UIView {
         let width=lastStar.frame.maxX
         self.bounds=CGRectMake(0, 0, width, starH)
     }
-    
+    //根据参数设置星星的显示
     func setStarViewType(){
         let norSelectedW:CGFloat=self.progress*CGFloat(self.starViews.count)
         let minSelectedW:CGFloat=self.minProgress*CGFloat(self.starViews.count)
@@ -125,7 +125,7 @@ class StarProgressBar: UIView {
         self.countFrame()
         self.setStarViewType()
     }
-    
+    //计算进度条的值
     func setTouchStarViewType(touches: Set<UITouch>){
         let touch = (touches as NSSet).anyObject()!
         let point = touch.locationInView(touch.view)
