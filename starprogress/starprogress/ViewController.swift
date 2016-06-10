@@ -29,7 +29,7 @@ class ViewController: UIViewController,StarProgressBarDelegate {
         starProgressBar.starNum=5
         starProgressBar.minProgress=0.2
         starProgressBar.progress=0.1
-        
+        starProgressBar.starProgressBarType=StarProgressBarType.Vertical
         starProgressBar.backgroundColor=UIColor.orangeColor()
         starProgressBar.frame=CGRectMake(10, 100, 300, 200)
         starProgressBar.delegate=self

@@ -17,6 +17,12 @@ protocol StarProgressBarDelegate : NSObjectProtocol {
     func starProgressBarTouchEnded(starProgressBar: StarProgressBar, progress:CGFloat)
 }
 
+public enum StarProgressBarType : Int {
+    
+    case Horizontal
+    case Vertical
+}
+
 class StarProgressBar: UIView {
     
     lazy private var starViews=[StarView]()
@@ -26,6 +32,12 @@ class StarProgressBar: UIView {
             
         }
     }
+    
+    var starProgressBarType:StarProgressBarType=StarProgressBarType.Horizontal{
+        didSet{
+            self.setNeedsLayout()
+        }
+    };
     
     //星星的数量
     var starNum : Int = 1{
@@ -90,13 +102,30 @@ class StarProgressBar: UIView {
         //计算每个星星的位置
         for i in 0..<self.starViews.count{
             let star=self.starViews[i]
-            let starX:CGFloat=CGFloat(i)*(margin+starW);
-            star.frame=CGRectMake(starX, 0, starW, starH)
+            var starX:CGFloat=0.0;
+            var starY:CGFloat=0.0;
+            switch (self.starProgressBarType){
+            case StarProgressBarType.Horizontal:
+                starX=CGFloat(i)*(margin+starW);
+            case StarProgressBarType.Vertical:
+                starY=CGFloat(i)*(margin+starH);
+            }
+            star.frame=CGRectMake(starX, starY, starW, starH)
         }
         //计算控件本身的bound
         let lastStar=self.starViews[self.starViews.count-1]
-        let width=lastStar.frame.maxX
-        self.bounds=CGRectMake(0, 0, width, starH)
+        var width:CGFloat=0.0;
+        var height:CGFloat=0.0;
+        switch (self.starProgressBarType){
+        case StarProgressBarType.Horizontal:
+            width=lastStar.frame.maxX
+            height=starH
+        case StarProgressBarType.Vertical:
+            width=starW
+            height=lastStar.frame.maxY
+        }
+        
+        self.bounds=CGRectMake(0, 0, width, height)
     }
     //根据参数设置星星的显示
     func setStarViewType(){
@@ -130,18 +159,36 @@ class StarProgressBar: UIView {
         let touch = (touches as NSSet).anyObject()!
         let point = touch.locationInView(touch.view)
         var n:Int=0
+        var pointXY=point.x
+        var boundsWH=self.bounds.size.width
+        switch (self.starProgressBarType){
+        case StarProgressBarType.Horizontal:
+            boundsWH=self.bounds.size.width
+            pointXY=point.x
+        case StarProgressBarType.Vertical:
+            boundsWH=self.bounds.size.height
+            pointXY=point.y
+        }
         for i in 0..<self.starViews.count{
             let star=self.starViews[i]
+            var starXY=star.frame.origin.x
+            switch (self.starProgressBarType){
+            case StarProgressBarType.Horizontal:
+                starXY=star.frame.origin.x
+            case StarProgressBarType.Vertical:
+                starXY=star.frame.origin.y
+            }
+            
             if(CGRectContainsPoint(star.frame, point)){
                 n=i;
                 break;
-            }else if(star.frame.origin.x>point.x){
+            }else if(starXY>pointXY){
                 n=i;
                 break;
             }
         }
         let totalMargin:CGFloat=CGFloat(n)*self.margin
-        self.progress=(point.x-totalMargin)/(self.bounds.size.width-CGFloat(self.starViews.count-1)*self.margin)
+        self.progress=(pointXY-totalMargin)/(boundsWH-CGFloat(self.starViews.count-1)*self.margin)
     }
     
     
